@@ -397,7 +397,7 @@ a:after {
 	padding-top: 70px;
 	color: white;
 	font-size: 40px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .textdivider p {
@@ -417,11 +417,13 @@ a:after {
 }
 
 .divider2 {
-	background-image: url('../img/bg/divider2.jpg')
+	background-image: url('../img/bg/divider2.jpg');
 }
 
 .divider3 {
-  background-image: url('../img/bg/divider4.jpg')
+  background-image: url('../img/background/friends.jpg');
+  background-position: 40% 40%;
+  padding-bottom: 5%;
 }
 
 .divider4 {
@@ -432,8 +434,11 @@ a:after {
 }
 
 .divider6 {
-	background-image: url('../img/background/coruna.jpg');
-  background-position: 90% 90%;
+	background-image: url('../img/background/coru.jpg');
+  background-position: 45% 45%;
+  background-size: 100% 150%;
+  padding-top: 4%;
+  padding-bottom: 10%;
 }
 
 
