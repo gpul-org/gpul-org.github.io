@@ -309,19 +309,19 @@ a:after {
 	text-shadow: 1px 1px 1px #000;
 }
 
-#greywrap {
+#about {
 	background: #f5f5f5;
 	margin-top: 0px;
-	padding-top: 40px;
+	padding-top: 100px;
 	border-bottom: 1px solid #ddd;
 	text-align: center;
 }
 
-#greywrap .callout {
+#about .callout {
 	margin-bottom: 20px;
 }
 
-#greywrap p {
+#about p {
 	margin-left: 30px;
 	margin-right: 30px;
 	letter-spacing: 1px;
@@ -329,7 +329,7 @@ a:after {
 	padding-bottom: 15px;
 }
 
-#greywrap .icon {
+#about .icon {
 	font-size: 60px;
 	line-height: 30px;
 	margin-bottom: 10px;
