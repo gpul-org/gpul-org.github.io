@@ -271,7 +271,6 @@ a:after {
 
 #headerwrap {
 	background: url(../img/background/charla2.jpg) no-repeat center top;
-	margin-top: -50px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -366,7 +365,6 @@ a:after {
     width: 100%;
     display: table;
     max-height: 450px;
-    border-bottom: 2px solid #E6EAED;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
