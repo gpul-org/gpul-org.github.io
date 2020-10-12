@@ -14,7 +14,6 @@
         $telefono = trim($_POST["telefono"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $udc = trim($_POST["udc"]);
-        $comentarios = trim($_POST["comentarios"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR 
@@ -26,8 +25,7 @@
             empty($ocupacion) OR
             empty($telefono) OR
             !filter_var($email, FILTER_VALIDATE_EMAIL) OR
-            empty($udc) OR
-            empty($comentarios)) {
+            empty($udc)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -52,7 +50,6 @@
         $email_content .= "Teléfono: $telefono\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Estuda na udc?: $udc\n\n";
-        $email_content .= "Comentarios:\n$comentarios\n";
 
         // Build the email headers.
         $email_headers = "From: $name <$email>";
