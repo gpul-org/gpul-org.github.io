@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx: 
+    image: trafex/php-nginx
+    restart: always
+    network_mode: host
+    volumes:
+        - ./:/var/www/html  
+
+  smtp:
+    image: bytemark/smtp
+    restart: always
+    network_mode: host
+    
