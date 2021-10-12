@@ -1,4 +1,4 @@
-FROM nginx
+FROM trafex/php-nginx
 MAINTAINER Pablo Castro <castrinho8@gmail.com>
 
-COPY . /usr/share/nginx/html
+COPY . /var/www/html
