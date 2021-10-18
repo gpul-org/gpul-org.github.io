@@ -33,11 +33,10 @@
         }
 
         // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
         $recipient = "secretario@gpul.org";
 
         // Set the email subject.
-        $subject = "Nuevo asociado from $name";
+        $subject = "$name se ha asociado a GPUL!";
 
         // Build the email content.
         $email_content = "Nombre: $name\n";
@@ -50,9 +49,6 @@
         $email_content .= "Teléfono: $telefono\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Estuda na udc?: $udc\n\n";
-
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
