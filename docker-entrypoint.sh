@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sed -i -- "s/\${MAIL_SMTP_SERVER}/${MAIL_SMTP_SERVER}/g" /etc/msmtprc
+sed -i -- "s/\${MAIL_SMTP_PORT}/${MAIL_SMTP_PORT}/g" /etc/msmtprc
 sed -i -- "s/\${MAIL_FROM}/${MAIL_FROM}/g" /etc/msmtprc
 sed -i -- "s/\${MAIL_USER}/${MAIL_USER}/g" /etc/msmtprc
 sed -i -- "s/\${MAIL_PASSWORD}/${MAIL_PASSWORD}/g" /etc/msmtprc
