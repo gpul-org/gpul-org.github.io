@@ -11,7 +11,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
         } else {
             $name = strip_tags(trim($_POST["name"]));
             $name = str_replace(array("\r","\n"),array(" "," "),$name);
-            if (!preg_match("/^[a-zA-Z' ]*$/", $name)) {
+            if (!preg_match("/^[a-zA-ZñÑáÁéÉíÍóÓúÚçÇäÄëËïÏöÖüÜàÀèÈìÌòÒùÙâÂêÊîÎôÔûÛ' ]*$/", $name)) {
                 $nameErr = "Nome inválido: só letras e espazos en blanco permitidos.";
             }
         }
@@ -20,7 +20,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
             $dniErr = "Introduza un DNI.";
         } else {
             $dni = trim($_POST["dni"]);
-            if (!preg_match("/^[0-9]{8}[a-zA-Z]$/", $dni)) {
+            if (!preg_match("/^[0-9]{8}[a-zA-Z]$|^[XYZ][0-9]{7}[a-zA-Z]$|^[a-zA-Z]{3}[0-9]{6}[a-zA-Z]?$/", $dni)) {
                 $dniErr = "Introduza un DNI válido (12345678D).";
             }
         }
@@ -53,7 +53,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
             $cityErr = "Introduza unha cidade.";
         } else {
             $cidade = trim($_POST["cidade"]);
-            if (!preg_match("/^[a-zA-Z' ]*$/", $cidade)) {
+            if (!preg_match("/^[a-zA-ZñÑáÁéÉíÍóÓúÚçÇäÄëËïÏöÖüÜàÀèÈìÌòÒùÙâÂêÊîÎôÔûÛ' ]*$/", $cidade)) {
             $cityErr = "Cidade inválida: só letras e espazos en blanco permitidos.";
             }
         }
@@ -62,7 +62,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
             $jobErr = "Introduza unha ocupación.";
         } else {
             $ocupacion = trim($_POST["ocupacion"]);
-            if (!preg_match("/^[a-zA-Z' ]*$/", $ocupacion)) {
+            if (!preg_match("/^[a-zA-ZñÑáÁéÉíÍóÓúÚçÇäÄëËïÏöÖüÜàÀèÈìÌòÒùÙâÂêÊîÎôÔûÛ' ]*$/", $ocupacion)) {
             $jobErr = "Ocupación inválida: só letras e espazos en blanco permitidos.";
             }
         }
@@ -89,7 +89,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
             $udcErr = "Introduza se estudas na UDC.";
         } else {
             $udc = trim($_POST["udc"]);
-            if (!preg_match("/^[a-zA-Z' ]*$/", $udc)) {
+            if (!preg_match("/^[a-zA-ZñÑáÁéÉíÍóÓúÚçÇäÄëËïÏöÖüÜàÀèÈìÌòÒùÙâÂêÊîÎôÔûÛ' ]*$/", $udc)) {
                 $udcErr = "Só letras e espazos en blanco permitidos.";
             }
         }
