@@ -133,19 +133,19 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             // http_response_code(200);
-            header("Location: http_codes/200.html")
+            header("Location: http_codes/200.html");
             echo "Thank You! Your message has been sent.";
         } else {
             // Set a 500 (internal server error) response code.
             // http_response_code(500);
-            header("Location: http_codes/500.html")
+            header("Location: http_codes/500.html");
             echo "Oops! Something went wrong and we couldn't send your message.";
         }
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         // http_response_code(403);
-        header("Locarion: http_codes/403.html")
+        header("Locarion: http_codes/403.html");
         echo "There was a problem with your submission, please try again.";
     }
 
