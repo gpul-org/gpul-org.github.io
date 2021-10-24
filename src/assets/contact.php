@@ -106,24 +106,13 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
             !empty($emailErr) OR
             !empty($udcErr)) {
             // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Please complete the form and try again.\n";
-            echo $nameErr . "\n";
-            echo $dniErr . "\n";
-            echo $dateErr . "\n";
-            echo $addressErr . "\n";
-            echo $cpErr . "\n";
-            echo $cityErr . "\n";
-            echo $jobErr . "\n";
-            echo $phoneErr . "\n";
-            echo $emailErr . "\n";
-            echo $udcErr . "\n";
-            
+            // http_response_code(400);
+            header('Location: http_codes/400.html');         
             exit;
         }
 
         // Set the recipient email address.
-        $recipient = "secretario@gpul.org";
+        $recipient = "altasocio@gpul.org";
 
         // Set the email subject.
         $subject = "$name se ha asociado a GPUL!";
@@ -143,17 +132,20 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
-            http_response_code(200);
+            // http_response_code(200);
+            header("Location: http_codes/200.html");
             echo "Thank You! Your message has been sent.";
         } else {
             // Set a 500 (internal server error) response code.
-            http_response_code(500);
+            // http_response_code(500);
+            header("Location: http_codes/500.html");
             echo "Oops! Something went wrong and we couldn't send your message.";
         }
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
+        // http_response_code(403);
+        header("Locarion: http_codes/403.html");
         echo "There was a problem with your submission, please try again.";
     }
 
