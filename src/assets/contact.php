@@ -112,7 +112,7 @@ $name = $dni = $data_nacemento = $enderezo = $cp = $cidade = $ocupacion = $telef
         }
 
         // Set the recipient email address.
-        $recipient = "secretario@gpul.org";
+        $recipient = "altasocio@gpul.org";
 
         // Set the email subject.
         $subject = "$name se ha asociado a GPUL!";
