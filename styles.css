@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #777;
+}
+
+.info {
+    padding: 2rem 0;
+}
+
+.card {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.card:last-child {
+    border-bottom: none;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.subscription {
+    padding: 2rem 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #777;
+}
