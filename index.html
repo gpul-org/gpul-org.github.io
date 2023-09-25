@@ -1,397 +1,653 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
     <title>GPUL - Grupo de Programadores e Usuarios de Linux</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/logos/logo_gpul.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Glide CSS ======-->
+    <link rel="stylesheet" href="assets/css/glide.core.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.5-alpha.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Primary Meta Tags -->
+    <title>GPUL - Grupo de Programadores e Usuarios de Linux</title>
+    <meta name="title" content="GPUL - Grupo de Programadores e Usuarios de Linux" />
+    <meta name="description" content="GPUL, o Grupo de Programadores e Usuarios de Linux, promove a cultura do software, hardware e coñecemento libre desde 1998 a través de charlas, hackathons, conferencias e outras actividades colaborativas. Únete á nosa comunidade e participa na promoción da tecnoloxía libre." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gpul.org/" />
+    <meta property="og:title" content="GPUL - Grupo de Programadores e Usuarios de Linux" />
+    <meta property="og:description" content="GPUL, o Grupo de Programadores e Usuarios de Linux, promove a cultura do software, hardware e coñecemento libre desde 1998 a través de charlas, hackathons, conferencias e outras actividades colaborativas. Únete á nosa comunidade e participa na promoción da tecnoloxía libre." />
+    <meta property="og:image" content="assets/images/background/meta.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gpul.org/" />
+    <meta property="twitter:title" content="GPUL - Grupo de Programadores e Usuarios de Linux" />
+    <meta property="twitter:description" content="GPUL, o Grupo de Programadores e Usuarios de Linux, promove a cultura do software, hardware e coñecemento libre desde 1998 a través de charlas, hackathons, conferencias e outras actividades colaborativas. Únete á nosa comunidade e participa na promoción da tecnoloxía libre." />
+    <meta property="twitter:image" content="assets/images/background/meta.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
 </head>
-<body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="bg-white py-4 shadow sticky top-0 z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <img src="assets/logo.png" alt="GPUL" class="h-12">
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-            <!-- Navigation for larger screens -->
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="#hero" class="text-gray-600 hover:text-gray-900">Home</a></li>
-                    <li><a href="#about" class="text-gray-600 hover:text-gray-900">Cultura Libre</a></li>
-                    <li><a href="#projects" class="text-gray-600 hover:text-gray-900">Os nosos fregados</a></li>
-                    <li><a href="#lists" class="text-gray-600 hover:text-gray-900">Listas de correo</a></li>
-                    <li><a href="#management" class="text-gray-600 hover:text-gray-900">Directiva</a></li>
-                    <li><a href="#join" class="text-gray-600 hover:text-gray-900">Asóciate!</a></li>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section id="home" class="header_area">
+        <div id="header_navbar" class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img id="logo" src="assets/images/logos/logo_gpul.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll active" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#features">Cultura Libre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#portfolio">Os nosos fregados</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#pricing">Listas de Correo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Directiva</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Asóciate!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- navbar collapse -->
+                        </nav>
+                        <!-- navbar -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- header navbar -->
+
+        <div class="header_hero">
+            <div class="single_hero bg_cover d-flex align-items-center" style="background-image: url(assets/images/background/hackudc-blur.jpeg);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="hero_content text-center">
+                                <img id="logo" src="assets/images/logos/logo_gpul.png" alt="Logo" class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                                <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Grupo de Programadores e Usuarios de Linux</h2>
+                                <!-- <h2 class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Grupo de Programadores e Usuarios de Linux</h2> -->
+                                <!-- <a href="#features" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Explore</a> -->
+                            </div>
+                            <!-- hero content -->
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- single hero -->
+        </div>
+        <!-- header hero -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== FEATURES PART START ======-->
+
+    <section id="features" class="features_area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">A qué nos dedicamos</h4>
+                        <!-- <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p> -->
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <i class="lni lni-layers"></i>
+                        <h4 class="features_title">Software libre</a>
+                        </h4>
+                        <p>Ver e reutilizar o código é fundamental para aprender, para estar seguros de ter privacidade e para mellorar o software.</p>
+                    </div>
+                    <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <i class="lni lni-cogs"></i>
+                        <h4 class="features_title">Hardware libre</a>
+                        </h4>
+                        <p>Igual que no software, no hardware tamén se poden publicar os planos e deseños para democratizar o acceso a tecnoloxía.</p>
+                    </div>
+                    <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <i class="lni lni-bulb"></i>
+                        <h4 class="features_title">Coñecemento libre</a>
+                        </h4>
+                        <p>Non nos podemos olvidar da importancia de compartir coñecemento libremente, sen restricións, mellorando a sociedade.</p>
+                    </div>
+                    <!-- single features -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== FEATURES PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="pt-130">
+        <div class="about_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about_content pt-120 pb-130">
+                            <div class="section_title pb">
+                                <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Freeing minds since 1998</h4>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Toda unha vida apoiando a tecnoloxía libre, facendo activismo e mostrándolle cada día a máis xente o importante que é para a sociedade.</p>
+                                <!-- <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Lorem ipsum dolor
+                                    sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore etdolore maali quyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores</p> -->
+                            </div>
+                            <div class="container">
+                                <div class="col-md-12 text-center">
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="main-btn" data-toggle="modal" data-target="#estatutos">Estatutos</button>
+                                    <!-- Modal -->
+                                    <div id="estatutos" class="modal fade" role="dialog" tabindex="-1">
+                                        <div class="modal-dialog modal-lg">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Estatutos GPUL</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <embed src="./assets/lib/estatutos.pdf" frameborder="0" width="100%" height="700px">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section title -->
+                        </div>
+                        <!-- about content -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+
+            <div class="about_image bg_cover wow fadeInLeft" data-wow-duration="1.3s" data-wow-del4ay="0.2s" style="background-image: url(assets/images/background/linux-tux.jpg)">
+                <div class="image_content">
+                    <h4 class="experience"><span id="getYears"></span> anos promovendo a cultura libre</h4>
+                </div>
+            </div>
+            <!-- about image -->
+        </div>
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== PORTFOLIO PART START ======-->
+
+    <section id="portfolio" class="portfolio_area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-60">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Os nosos fregados</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                            Somos de meternos sempre en fregados, dende pequenas charlas e hackathons ata grandes conferencias internacionais con todo tipo de asociacións de software libre. Aquí algúns exemplos do que temos montado. </p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+        <div class="portfolio_wrapper d-flex flex-wrap">
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <img src="assets/images/portfolio/labs.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://labs.gpul.org/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">GPUL Labs</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                <img src="assets/images/portfolio/guadec.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://feborg.es/guadec2012/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">GUADEC</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <img src="assets/images/portfolio/akademy.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://akademy.kde.org/2015"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Akademy</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <img src="assets/images/portfolio/xornadas-libres.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <!-- <li><a href="#"><i class="lni lni-link"></i></a></li> -->
+                    </ul>
+                    <h5 class="portfolio_title">Xornadas Libres</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <img src="assets/images/portfolio/hackathino.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://hackatinho.gpul.org/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">hackathiño</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                <img src="assets/images/portfolio/dudes.jpg" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="http://www.dudesconf.org/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Dudes Conf</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <img src="assets/images/portfolio/gpul_school.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://www.school.gpul.org/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">GPUL School</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <img src="assets/images/portfolio/xdc.png" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="https://xdc2018.x.org/"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Xorg</h5>
+                </div>
+                <!-- Single portfolio -->
+            </div>
+            <!-- portfolio wrapper -->
+        </div>
+        <!-- row -->
+    </section>
+
+    <!--====== PORTFOLIO PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+
+    <section id="pricing" class="pricing_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Listas de correo</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Somos un pouco vintage e seguimos usando listas de correo para as nosas comunicacións.</p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <h4 class="pricing_title">Organización de actividades</h4>
+                        <span class="price">Organización</span>
+                        <br>
+                        <p>Xa o dí a palabra, nesta lista dedicamonos a <span>"organizar" actividades</span> e a mandar por aquí toda a información sobre elas. Se queres propoñer algún evento, dar unha charla ou colaborar en algo que facemos, está é a túa
+                            lista.
+                        </p>
+                        <a href="http://lists.gpul.org/cgi-bin/mailman/listinfo/organizacion" class="mian-btn">Suscribirme</a>
+                    </div>
+                    <!-- single pricing -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <h4 class="pricing_title">Sobre todo ofertas de traballo</h4>
+                        <span class="price">Misc</span>
+                        <br>
+                        <p>Aínda que non ten unha temática fixa, por aquí pódese mandar todo o que non encaixe no resto de listas. Vale para anunciar eventos de outras comunidades, cousas curiosas pero sobre todo é útil para enviar e recibir ofertas de traballo.</p>
+                        <a href="http://lists.gpul.org/cgi-bin/mailman/listinfo/misc" class="mian-btn">Suscribirme</a>
+                    </div>
+                    <!-- single pricing -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== PRICING PART ENDS ======-->
+
+    <!--====== TEAM PART START ======-->
+
+    <section id="team" class="team_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Directiva actual</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">En GPUL somos unha gran comunidade na que nos encanta que todo o mundo participe pero alguén ten que se cargar cos papeleos, estos somos aos que nos toca agora mesmo :P </p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center team_active">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <img src="assets/images/team/jorge.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">Jorge Teixeira</a></h4>
+                            <p>Presidente</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/jorgeteixe"><i class="lni lni-github-original"></i></a></li>
+                                <li><a href="https://twitter.com/jorgeteixe_"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jorge-teixeira-crespo/"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <img src="assets/images/team/david.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">David Maseda</a></h4>
+                            <p>Vicepresidente</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/wizenink"><i class="lni lni-github-original"></i></a></li>
+                                <li><a href="https://twitter.com/WizenInk"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://github.com/wizenink"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/team/alvaro.jpg" alt="team">
+
+                        <divi class="team_content">
+                            <h4 class="team_name"><a href="#">Álvaro Freire</a></h4>
+                            <p>Tesoureiro</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/alvaro-freire"><i class="lni lni-github-original"></i></a></li>
+                                <li><a href="https://twitter.com/alvvarofreire"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/alvvarofreire/"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center team_active">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/team/avatar.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">Paula Taibo</a></h4>
+                            <p>Secretario</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/PT-15"><i class="lni lni-github-original"></i></a></li>
+                                <!-- <li><a href="https://twitter.com/Pedrety_"><i class="lni lni-twitter-original"></i></a></li> -->
+                                <!-- <li><a href="https://www.linkedin.com/in/pedro-costal-mill%C3%A1n/"><i class="lni lni-linkedin-original"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/team/bruno.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">Bruno Cabado</a></h4>
+                            <p>Vogal</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/Kr4is"><i class="lni lni-github-original"></i></a></li>
+                                <li><a href="https://twitter.com/brunocabado"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/brunocabado/"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/team/pedro.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">Pedro Costal</a></h4>
+                            <p>Vogal</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/pedrety"><i class="lni lni-github-original"></i></a></li>
+                                <li><a href="https://twitter.com/Pedrety_"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/pedro-costal-mill%C3%A1n/"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center team_active">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/team/avatar.jpg" alt="team">
+
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#">Siyuan He</a></h4>
+                            <p>Vogal</p>
+                            <ul class="social">
+                                <li><a href="https://github.com/siyunesweek"><i class="lni lni-github-original"></i></a></li>
+                                <!-- <li><a href="https://twitter.com/"><i class="lni lni-twitter-original"></i></a></li> -->
+                                <!-- <li><a href="https://es.linkedin.com/in/"><i class="lni lni-linkedin-original"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- single team -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== TEAM PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area bg_cover pt-120 pb-130" style="background-image: url(assets/images/background/coru.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title section_title_2 text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Asóciate</h4>
+                        <!-- <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p> -->
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="asociate">
+                <p>Para asociarte envía un correo a altas@gpul.org cos seguintes datos:</p>
+                <ul>
+                    <li>Nome e apelidos</li>
+                    <li>DNI/NIE/Pasaporte</li>
+                    <li>Data de nacemento</li>
+                    <li>Enderezo completo</li>
+                    <li>Profesión/Carreira</li>
+                    <li>Número de teléfono</li>
+                    <li>Indica se estudas na UDC</li>
                 </ul>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+            </p>
         </div>
-
-        <!-- Navigation for mobile -->
-        <nav id="mobile-menu" class="md:hidden mt-4 hidden container mx-auto px-4">
-            <ul>
-                <li><a href="#hero" class="block text-gray-600 hover:text-gray-900 mb-2">Home</a></li>
-                <li><a href="#about" class="block text-gray-600 hover:text-gray-900 mb-2">Cultura Libre</a></li>
-                <li><a href="#projects" class="block text-gray-600 hover:text-gray-900 mb-2">Os nosos fregados</a></li>
-                <li><a href="#lists" class="block text-gray-600 hover:text-gray-900 mb-2">Listas de correo</a></li>
-                <li><a href="#management" class="block text-gray-600 hover:text-gray-900 mb-2">Directiva</a></li>
-                <li><a href="#join" class="block text-gray-600 hover:text-gray-900 mb-2">Asóciate!</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="relative h-screen overflow-hidden">
-        <img src="assets/hackudc.jpeg" alt="Hero" class="absolute inset-0 object-cover transform scale-110 w-full h-full blur-sm opacity-80">
-
-        <!-- Logo and Text -->
-        <div class="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-            <!-- Big Logo -->
-            <img src="assets/logo.png" alt="Organization Logo" class="w-80 mx-auto mb-4">
-            <!-- Text -->
-            <h1 class="text-6xl text-center text-white">Grupo de Programadores e Usuarios de Linux</h1>
-        </div>
+        <!-- container -->
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-12 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <!-- Section Title -->
-            <h2 class="text-4xl mb-8 text-center">A qué nos dedicamos</h2>
-            
-            <!-- Three Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Software libre -->
-                <div class="bg-white p-6 rounded shadow text-center">
-                    <i class="lni lni-layers w-16 mx-auto mb-4"></i>
-                    <h3 class="text-2xl mb-4">Software libre</h3>
-                    <p>Ver e reutilizar o código é fundamental para aprender, para estar seguros de ter privacidade e para mellorar o software.</p>
-                </div>
-                
-                <!-- Hardware libre -->
-                <div class="bg-white p-6 rounded shadow text-center">
-                    <i class="lni lni-cogs w-16 mx-auto mb-4"></i>
-                    <h3 class="text-2xl mb-4">Hardware libre</h3>
-                    <p>Igual que no software, no hardware tamén se poden publicar os planos e deseños para democratizar o acceso a tecnoloxía.</p>
-                </div>
-                
-                <!-- Coñecemento libre -->
-                <div class="bg-white p-6 rounded shadow text-center">
-                    <i class="lni lni-bulb w-16 mx-auto mb-4"></i>
-                    <h3 class="text-2xl mb-4">Coñecemento libre</h3>
-                    <p>Non nos podemos olvidar da importancia de compartir coñecemento libremente, sen restricións, mellorando a sociedade.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--====== CONTACT PART ENDS ======-->
 
-    <!-- Split Section -->
-    <section class="bg-gray-200 py-12">
-        <div class="container mx-auto px-4 flex md:flex-row flex-col-reverse">
-            <!-- Text Section -->
-            <div class="w-full md:w-1/2 mb-6 md:mb-0">
-                <h2 class="text-3xl mb-4">Freeing minds since 1998</h2>
-                <h3 class="text-xl mb-4 text-gray-600">Máis de 25 apoiando a tecnoloxía libre, facendo activismo e mostrándolle cada día a máis xente o importante que é para a sociedade.</h3>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">Estatutos</a>
-            </div>
-            <!-- Image Section -->
-            <div class="w-full md:w-1/2 flex items-center justify-center">
-                <img src="assets/linux.png" alt="Image" class="w-3/4">
-            </div>
-        </div>
-    </section>
+    <!--====== FOOTER PART START ======-->
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-white py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl mb-6 text-center">Os nosos fregados</h2>
-            <h3 class="text-xl mb-6 text-gray-600 text-center">Somos de meternos sempre en fregados, dende pequenas charlas e hackathons ata grandes conferencias internacionais con todo tipo de asociacións de software libre. Aquí algúns exemplos do que temos montado.            </h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- GPUL Labs -->
-                <div class="relative group">
-                    <img src="assets/labs.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">GPUL Labs</p>
-                    </div>
+    <footer id="footer" class="footer_area">
+        <div class="container">
+            <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+                <p class="credit">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                <div class="footer_social pt-15">
+                    <ul>
+                        <li><a href="https://www.facebook.com/gpulfic/"><i class="lni lni-facebook-original"></i></a></li>
+                        <li><a href="https://twitter.com/gpul_"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="https://www.instagram.com/gpul_/"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://t.me/+PrK44xhqJ9eP9ZUf"><i class="lni lni-telegram-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/gpul/"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/gpul-org"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="https://archive.org/details/@gpul"><i class="lni lni-folder"></i></a></li>
+                    </ul>
                 </div>
-                <!-- GUADEC -->
-                <div class="relative group">
-                    <img src="assets/guadec.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">GUADEC</p>
-                    </div>
-                </div>
-                <!-- Akademy -->
-                <div class="relative group">
-                    <img src="assets/akademy.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">Akademy</p>
-                    </div>
-                </div>
-                <!-- Xornadas libres -->
-                <div class="relative group">
-                    <img src="assets/xornadas-libres.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">Xornadas Libres</p>
-                    </div>
-                </div>
-                <!-- Hackathiño -->
-                <div class="relative group">
-                    <img src="assets/hackathino.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">Hackathiño</p>
-                    </div>
-                </div>
-                <!-- Dudes conf -->
-                <div class="relative group">
-                    <img src="assets/dudes.jpg" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">Dudes Conf</p>
-                    </div>
-                </div>
-                <!-- GPUL School -->
-                <div class="relative group">
-                    <img src="assets/gpul_school.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">GPUL School</p>
-                    </div>
-                </div>
-                <!-- Xorg -->
-                <div class="relative group">
-                    <img src="assets/xdc.png" alt="Project Image" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white">Xorg</p>
-                    </div>
-                </div>
+                <!-- footer social -->
             </div>
+            <!-- footer wrapper -->
         </div>
-    </section>
-
-    <!-- Two Cards Section -->
-    <section id="lists" class="bg-gray-200 py-12 text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl mb-6">Listas de correo</h2>
-            <h3 class="text-xl mb-6 text-gray-600">Somos un pouco vintage e seguimos usando listas de correo para as nosas comunicacións.</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Organización -->
-                <div class="p-4 bg-gray-100">
-                    <h2 class="text-2xl mb-4">Organización</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Xa o dí a palabra, nesta lista dedicamonos a "organizar" actividades e a mandar por aquí toda a información sobre elas. Se queres propoñer algún evento, dar unha charla ou colaborar en algo que facemos, está é a túa lista.</h3>
-                    <a href="#" class="text-blue-600 hover:underline">Suscribirme</a>
-                </div>
-                <!-- Misc -->
-                <div class="p-4 bg-gray-100">
-                    <h2 class="text-2xl mb-4">Misc</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Aínda que non ten unha temática fixa, por aquí pódese mandar todo o que non encaixe no resto de listas. Vale para anunciar eventos de outras comunidades, cousas curiosas pero sobre todo é útil para enviar e recibir ofertas de traballo.</h3>
-                    <a href="#" class="text-blue-600 hover:underline">Suscribirme</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- People Managing the Org Section -->
-    <section id="management" class="bg-white py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl mb-6 text-center">Directiva actual</h2>
-            <h3 class="text-xl mb-10 text-gray-600 text-center mx-auto max-w-xl">En GPUL somos unha gran comunidade na que nos encanta que todo o mundo participe pero alguén ten que cargar cos papeleos, estos somos aos que nos toca agora mesmo :P</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:grid-cols-7">
-                <!-- Presidente -->
-                <div class="text-center">
-                    <img src="assets/jorge.jpg" alt="Jorge Teixeira" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Jorge Teixeira</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Presidente</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Vicepresidente -->
-                <div class="text-center">
-                    <img src="assets/david.jpg" alt="David Maseda" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">David Maseda</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Vicepresidente</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Secretaria -->
-                <div class="text-center">
-                    <img src="assets/avatar.jpg" alt="Paula Taibo" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Paula Taibo</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Secretaria</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Tesoureiro -->
-                <div class="text-center">
-                    <img src="assets/alvaro.jpg" alt="Álvaro Freire" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Álvaro Freire</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Tesoureiro</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Vogal -->
-                <div class="text-center">
-                    <img src="assets/bruno.jpg" alt="Bruno Cabado" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Bruno Cabado</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Vogal</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Vogal -->
-                <div class="text-center">
-                    <img src="assets/pedro.jpg" alt="Pedro Costal" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Pedro Costal</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Vogal</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-                <!-- Vogal -->
-                <div class="text-center">
-                    <img src="assets/avatar.jpg" alt="Siyuan Ye" class="w-24 h-24 rounded-full mb-4 mx-auto">
-                    <h2 class="text-xl mb-2">Siyuan Ye</h2>
-                    <h3 class="text-lg mb-4 text-gray-600">Vogal</h3>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="#"><i class="lni lni-github w-6"></i></a>
-                        <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                        <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Our Organization Section -->
-    <section id="join" class="bg-gray-200 py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl mb-6 text-center">Asóciate!</h2>
-            <form action="#" method="POST">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="name" class="block text-lg mb-1">Nome e apelidos</label>
-                        <input type="text" id="name" name="name" placeholder="Malena García" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="id_number" class="block text-lg mb-1">DNI/NIE/Pasaporte</label>
-                        <input type="text" id="id_number" name="id_number" placeholder="G15659220" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-lg mb-1">Email</label>
-                        <input type="email" id="email" name="email" placeholder="info@gpul.org" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="birthdate" class="block text-lg mb-1">Data de nacemento</label>
-                        <input type="date" id="birthdate" name="birthdate" placeholder="01/01/1998" class="appearance-none p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="address" class="block text-lg mb-1">Dirección</label>
-                        <input type="text" id="address" name="address" placeholder="Camiño do Lagar de Castro, 6" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="city" class="block text-lg mb-1">Cidade</label>
-                        <input type="text" id="city" name="city" placeholder="A Coruña" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="postal_code" class="block text-lg mb-1">Código Postal</label>
-                        <input type="text" id="postal_code" name="postal_code" placeholder="15008" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="phone_number" class="block text-lg mb-1">Teléfono</label>
-                        <input type="tel" id="phone_number" name="phone_number" placeholder="713024255" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="profession" class="block text-lg mb-1">Profesión/Carreira</label>
-                        <input type="text" id="profession" name="profession" placeholder="Enxeñeira Informática" class="p-3 bg-white border border-gray-300 rounded w-full">
-                    </div>
-                    <div>
-                        <label for="udc_student" class="block text-lg mb-1">Estudas na UDC?</label>
-                        <select id="udc_student" name="udc_student" class="appearance-none p-3 bg-white border border-gray-300 rounded w-full">
-                            <option value="Si">Si</option>
-                            <option value="Non">Non</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="text-center mt-6">
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Asociarme</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <p>2023 - Grupo de Programadores e Usuarios de Linux</p>
-            <div class="flex space-x-4">
-                <a href="#"><i class="lni lni-facebook w-6"></i></a>
-                <a href="#"><i class="lni lni-twitter w-6"></i></a>
-                <a href="#"><i class="lni lni-linkedin w-6"></i></a>
-                <a href="#"><i class="lni lni-github w-6"></i></a>
-            </div>
-        </div>
+        <!-- container -->
     </footer>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        $(document).ready(function() {
-            $('#mobile-menu-button').on('click', function() {
-                $('#mobile-menu').toggle();
-            });
-        });
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
 
 
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
 
-                // Ensure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+    <!--====== glide js ======-->
+    <script src="assets/js/glide.min.js"></script>
 
-                    // Store hash
-                    var hash = this.hash;
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
 
-                    // Use jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    // Adjust the 64 to the height of your sticky header
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top - 64
-                    }, 800, function(){});
-                } 
-            });
-        });
+    <!--====== Contact Form js ======-->
+    <script src="assets/js/contact-form.js"></script>
 
-    </script>
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <!--====== GetActiveYears js ======-->
+    <script src="assets/js/getActiveYears.js"></script>
+
+
+
 </body>
+
 </html>
