@@ -577,18 +577,118 @@
                 </div>
             </div>
             <!-- row -->
-            <div class="asociate">
-                <p>Para asociarte envía un correo a altas@gpul.org cos seguintes datos:</p>
-                <ul>
-                    <li>Nome e apelidos</li>
-                    <li>DNI/NIE/Pasaporte</li>
-                    <li>Data de nacemento</li>
-                    <li>Enderezo completo</li>
-                    <li>Profesión/Carreira</li>
-                    <li>Número de teléfono</li>
-                    <li>Indica se estudas na UDC</li>
-                </ul>
-            </p>
+            <form id="contact-form" class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Nome e apelidos" name="name" id="name" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="DNI/NIE/Pasaporte" name="dni" id="dni" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Data de nacemento (DD-MM-YYYY)" name="data_nacemento" id="data_nacemento" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Enderezo" name="enderezo" id="enderezo" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Código postal" name="cp" id="cp" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Cidade" name="cidade" id="cidade" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Profesión / Carreira" name="ocupacion" id="ocupacion" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="phone" placeholder="Número de telefono" name="telefono" id="telefono" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Estudas na Universidade da Coruña?" name="udc" id="udc" required>
+                        </div>
+                        <!-- single form -->
+                    </div>
+
+                    <p class="form-message"></p>
+
+                    <div class="col-lg-12">
+                        <div class="single_form text-center">
+                            <button class="main-btn" type="submit">Asociarme!</button>
+                        </div>
+                        <!-- single form -->
+                    </div>
+                </div>
+                <!-- row -->
+            </form>
+            <div id="formulario-correcto" style="display: none; color: #fff!important">
+                <h5 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">¡Te has asociado a GPUL!</h5>
+                <p>En los proximos días, deberías recibir un correo confirmando tu alta. Si tienes dudas de que el formulario se envió correctamente, o por cualquier otro motivo relacionado con tu alta, puedes comunicarte con el gpul a través de <a href="mailto:altas@gpul.org">altas@gpul.org</a></p>
+                <p>Mientras tanto, puedes unirte a nuestro <a href="https://t.me/+PrK44xhqJ9eP9ZUf">nuestro grupo de Telegram</a></p>
+            </div>
+            <div class="title wow fadeInUp" id="formulario-error" style="display: none">
+                <h5 data-wow-duration="1.3s" data-wow-delay="0.2s">Error con el formulario</h5>
+                <p>El formulario no se envió correctamente. Si sigue sin funcionar, puedes solicitar el alta en GPUL enviando un correo con los mismos datos a <a href="mailto:altas@gpul.org">altas@gpul.org</a></p>
+                <p><i>Disculpa las molestias</i></p>
+            </div>
+            <script>
+                const form = document.getElementById("contact-form");
+
+                document.getElementById("contact-form").addEventListener("submit", function(e) {
+                    const url = "https://activepieces.gpul.org/api/v1/webhooks/dDxy1O7TjiSWJOZnCpPPP/sync";
+                    e.preventDefault();
+                    formData = new FormData(form)
+
+                    fetch(url, {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => {
+                        if(response.status != 200) {
+                            console.log('error');
+                            document.getElementById("formulario-error").style.removeProperty("display");
+                        }
+                        return response;
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('correcto');
+                        document.getElementById("formulario-correcto").style.removeProperty("display");
+                    });
+
+                    form.style.setProperty("display", "none");
+                })
+            </script>
         </div>
         <!-- container -->
     </section>
