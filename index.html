@@ -596,7 +596,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
-                            <label for="data_nacemento" class="form-label">Data de nacemento</label>
+                            <label for="data_nacemento" class="form-label">Data de nacemento (DD-MM-YYYY)</label>
                             <input type="text" placeholder="Data de nacemento (DD-MM-YYYY)" name="data_nacemento" id="data_nacemento" required>
                         </div>
                         <!-- single form -->
@@ -648,7 +648,7 @@
                             <!--<input type="text" placeholder="Estudas na Universidade da Coruña?" name="udc" id="udc" required>-->
                             <!--<label for="udc">Estudas na UDC?</label>-->
                             <label for="udc" class="form-label">Estudas na Universidade da Coruña?</label>
-                            <select name="udc" class="form-select" required>
+                            <select name="udc" id="udc" class="form-select" required>
                                 <option value="" disabled selected hidden>Estudas na Universidade da Coruña?...</option>
                                 <option value="Sí">Sí</option>
                                 <option value="No">No</option>
@@ -672,13 +672,16 @@
                         select:invalid { color: rgba(255, 255, 255, 0.6); }
 
                         .form-label { color: #fff; }
+
+                        .disabled { pointer-events: none; background-color: #ddd; }
                     </style>
 
                     <p class="form-message"></p>
 
                     <div class="col-lg-12">
                         <div class="single_form text-center">
-                            <button class="main-btn" type="submit">Asociarme!</button>
+                            <button class="main-btn" type="submit" id="submit">Asociarme!</button>
+                            <p style="display: none;" id="mensaje-envio">Enviando o formulario...</p>
                         </div>
                         <!-- single form -->
                     </div>
@@ -701,7 +704,10 @@
                 document.getElementById("contact-form").addEventListener("submit", function(e) {
                     const url = "https://activepieces.gpul.org/api/v1/webhooks/dDxy1O7TjiSWJOZnCpPPP/sync";
                     e.preventDefault();
-                    formData = new FormData(form)
+                    formData = new FormData(form);
+
+                    document.getElementById('submit').classList.add('disabled');
+                    document.getElementById('mensaje-envio').style.removeProperty('display');
 
                     fetch(url, {
                         method: 'POST',
@@ -709,18 +715,17 @@
                     })
                     .then(response => {
                         if(response.status != 200) {
-                            console.log('error');
+                            form.style.setProperty("display", "none");
                             document.getElementById("formulario-error").style.removeProperty("display");
                         }
                         return response;
                     })
                     .then(response => response.json())
                     .then(data => {
-                        console.log('correcto');
+                        form.style.setProperty("display", "none");
                         document.getElementById("formulario-correcto").style.removeProperty("display");
                     });
 
-                    form.style.setProperty("display", "none");
                 })
             </script>
         </div>
