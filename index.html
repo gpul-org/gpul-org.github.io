@@ -582,54 +582,63 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="name" class="form-label">Nome</label>
                             <input type="text" placeholder="Nome e apelidos" name="name" id="name" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="dni" class="form-label">DNI/NIE/Pasaporte</label>
                             <input type="text" placeholder="DNI/NIE/Pasaporte" name="dni" id="dni" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="data_nacemento" class="form-label">Data de nacemento</label>
                             <input type="text" placeholder="Data de nacemento (DD-MM-YYYY)" name="data_nacemento" id="data_nacemento" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="enderezo" class="form-label">Enderezo</label>
                             <input type="text" placeholder="Enderezo" name="enderezo" id="enderezo" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="cp" class="form-label">Código postal</label>
                             <input type="text" placeholder="Código postal" name="cp" id="cp" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="cidade" class="form-label">Cidade</label>
                             <input type="text" placeholder="Cidade" name="cidade" id="cidade" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="ocupación" class="form-label">Ocupación</label>
                             <input type="text" placeholder="Profesión / Carreira" name="ocupacion" id="ocupacion" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="telefono" class="form-label">Teléfono</label>
                             <input type="phone" placeholder="Número de telefono" name="telefono" id="telefono" required>
                         </div>
                         <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
+                            <label for="email" class="form-label">Correo electrónico</label>
                             <input type="email" placeholder="Email" name="email" id="email" required>
                         </div>
                         <!-- single form -->
@@ -638,6 +647,7 @@
                         <div class="single_form">
                             <!--<input type="text" placeholder="Estudas na Universidade da Coruña?" name="udc" id="udc" required>-->
                             <!--<label for="udc">Estudas na UDC?</label>-->
+                            <label for="udc" class="form-label">Estudas na Universidade da Coruña?</label>
                             <select name="udc" class="form-select" required>
                                 <option value="" disabled selected hidden>Estudas na Universidade da Coruña?...</option>
                                 <option value="Sí">Sí</option>
@@ -656,9 +666,12 @@
                             color: #fff;
                             background: none;
                             transition: all 0.3s ease-out 0s;
+                            border-radius: 0px;
                         }
 
                         select:invalid { color: rgba(255, 255, 255, 0.6); }
+
+                        .form-label { color: #fff; }
                     </style>
 
                     <p class="form-message"></p>
