@@ -745,7 +745,7 @@ p {
     line-height: 85px;
     color: #fff;
     margin-top: 15px; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @media only screen and (min-width: 992px) and (max-width: 1399px) {
       .hero_content .hero_title {
         font-size: 44px;
         line-height: 65px; } }
