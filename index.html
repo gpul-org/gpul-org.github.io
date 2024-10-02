@@ -696,37 +696,37 @@
             <div class="title wow fadeInUp" id="formulario-error" style="display: none">
                 <h5 data-wow-duration="1.3s" data-wow-delay="0.2s" style="color: var(--bs-white)">Erro co formulario</h5>
                 <p style="color: var(--bs-white)">O formulario non se enviou correctamente. Se segue sen funcionar, podes solicitar a alta en GPUL enviando un correo cos mesmos datos a <a href="mailto:altas@gpul.org">altas@gpul.org</a></p>
-            <p style="color: var(--bs-white)"><i>Disculpa las molestias</i></p>
+            <p style="color: var(--bs-white)"><i>Desculpe as molestias</i></p>
         </div>
             <script>
-                const form = document.getElementById("contact-form");
+                const form = document.getElementById('contact-form');
+                const submit = document.getElementById('submit')
+                const message = document.getElementById('mensaje-envio')
 
-                document.getElementById("contact-form").addEventListener("submit", function(e) {
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
                     const url = "https://activepieces.gpul.org/api/v1/webhooks/dDxy1O7TjiSWJOZnCpPPP/sync";
                     e.preventDefault();
                     formData = new FormData(form);
 
-                    document.getElementById('submit').classList.add('disabled');
-                    document.getElementById('mensaje-envio').style.removeProperty('display');
+                    submit.classList.add('disabled');
+                    message.style.removeProperty('display');
 
                     fetch(url, {
                         method: 'POST',
                         body: formData
                     })
                     .then(response => {
-                        if(response.status != 200) {
-                            form.style.setProperty("display", "none");
-                            document.getElementById("formulario-error").style.removeProperty("display");
+                        if(response.status == 200) {
+                            form.style.setProperty('display', 'none');
+                            document.getElementById('formulario-correcto').style.removeProperty('display');
                         }
-                        return response;
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        form.style.setProperty("display", "none");
-                        document.getElementById("formulario-correcto").style.removeProperty("display");
+                        else {
+                            document.getElementById('formulario-error').style.removeProperty('display');
+                            submit.classList.remove('disabled');
+                            message.style.display = 'none';
+                        }
                     });
-
-                })
+                });
             </script>
         </div>
         <!-- container -->
